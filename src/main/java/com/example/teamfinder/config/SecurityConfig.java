@@ -66,7 +66,9 @@ public class SecurityConfig {
        configuration.setAllowedOrigins(List.of(
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://team-finder-frontend-7vq4ym13p-snehith5.vercel.app"
+    "https://team-finder-frontend-7vq4ym13p-snehith5.vercel.app",
+    "https://team-finder-frontend-pgljj0rnl-snehith5.vercel.app",
+    "https://team-finder-frontend-three.vercel.app"
 ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
@@ -87,3 +89,4 @@ public class SecurityConfig {
         return configuration.getAuthenticationManager();
     }
 }
+
