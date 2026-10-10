@@ -50,7 +50,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/**").authenticated()
                 .anyRequest().authenticated())
             .sessionManagement(session -> session.sessionCreationPolicy(org.springframework.security.config.http.SessionCreationPolicy.IF_REQUIRED))
-            .httpBasic(httpBasic -> {});
+            .httpBasic(httpBasic -> httpBasic.disable());
 
         return http.build();
     }
@@ -89,4 +89,5 @@ public class SecurityConfig {
         return configuration.getAuthenticationManager();
     }
 }
+
 
