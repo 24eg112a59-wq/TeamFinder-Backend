@@ -70,6 +70,9 @@ public class SecurityConfig {
     "https://team-finder-frontend-pgljj0rnl-snehith5.vercel.app",
     "https://team-finder-frontend-three.vercel.app"
 ));
+        configuration.setAllowedOriginPatterns(List.of(
+            "https://team-finder-frontend-*-snehith5.vercel.app"
+        ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
