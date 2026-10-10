@@ -1,0 +1,17 @@
+﻿target/
+*.class
+
+.idea/
+.vscode/
+
+startup-error.txt
+startup-log.txt
+*.log
+
+.env
+.env.*
+!.env.example
+
+application-local.properties
+application-local.yml
+secrets.properties
